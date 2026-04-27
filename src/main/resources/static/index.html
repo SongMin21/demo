@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-
+<div id="login"></div>
 </body>
+<script>
+    fetch('login.html').then(r => r.text()).then(l => document.getElementById('login').innerHTML = l);
+</script>
 </html>
